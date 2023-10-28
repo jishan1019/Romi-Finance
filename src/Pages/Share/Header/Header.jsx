@@ -27,11 +27,7 @@ const Header = () => {
           </label>{" "}
           <Link to="/">
             <div className="flex items-center">
-              <img
-                className="-ml-2 lg:-ml-0 h-10 lg:h-12 lg:w-12"
-                src={icon}
-                alt=""
-              />
+              <img className="-ml-2 h-10 lg:h-12 lg:w-12" src={icon} alt="" />
               <p className="-ml-2 lg:-ml-0  lg:text-xl font-bold">
                 Romi Finance
               </p>
