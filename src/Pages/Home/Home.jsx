@@ -1,10 +1,14 @@
 import React from "react";
 import Hero from "./Hero/Hero";
+import HomeMoreDetails from "../HomeMoreDetails/HomeMoreDetails";
 
 const Home = () => {
   return (
-    <section className="pt-20 pb-20 px-2 lg:px-10">
+    <section className="pt-20 pb-20 space-y-10">
       <Hero />
+      <div className="borderTop">
+        <HomeMoreDetails />
+      </div>
     </section>
   );
 };

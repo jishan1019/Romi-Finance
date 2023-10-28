@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="max-w-7xl mx-auto my-16">
+    <section className="my-16 max-w-7xl mx-auto px-2 lg:px-10">
       <div className="text-4xl lg:text-5xl font-semibold space-y-2">
         <h1>Decentralized</h1>
         <div className="inline-flex flex-col lg:flex-row lg:gap-2 space-y-2 lg:space-y-0 ">

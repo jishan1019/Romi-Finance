@@ -35,6 +35,10 @@
   color: #b8b8b8;
 }
 
+.fourthColor {
+  @apply text-white text-opacity-80;
+}
+
 .primaryBg {
   background-color: #3eb489;
   color: white;
