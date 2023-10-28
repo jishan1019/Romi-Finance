@@ -10,8 +10,12 @@
   @apply border-b border-[#B8B8B8] border-opacity-60;
 }
 
+.borderRight {
+  @apply border-r border-[#B8B8B8] border-opacity-60;
+}
+
 .borderAll {
-  @apply border border-[#B8B8B8] border-opacity-60;
+  @apply border border-[#B8B8B8] border-opacity-50;
 }
 
 .primaryColor {
@@ -24,6 +28,11 @@
 }
 
 .primaryBg {
-  background-color: #b8b8b8;
-  color: wheat;
+  background-color: #3eb489;
+  color: white;
+  border-radius: 5px;
+}
+
+.primaryBg:hover {
+  background-color: #207a59;
 }

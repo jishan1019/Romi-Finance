@@ -1,13 +1,15 @@
 import React from "react";
 import icon from "../../../assets/icon/romi.png";
 import { Link } from "react-router-dom";
+import { BiWallet } from "react-icons/bi";
+import { FiMoreVertical } from "react-icons/fi";
 
 const Header = () => {
   return (
     <div>
       <div className="navbar bg-black backdrop-blur-md backdrop-filter text-white fixed z-10 max-w-[1600px] mx-auto shadow-2xl lg:px-8">
         <div className="navbar-start">
-          <label tabIndex={0} className="lg:hidden">
+          <label tabIndex={0} className="lg:hidden cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -64,42 +66,33 @@ const Header = () => {
             </Link>
           </ul>
         </div>
-        <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        <div className="navbar-end gap-2 lg:gap-4">
+          {/* Trade */}
+          <div>
+            <button className="primaryBg px-2 py-1">Trade</button>
+          </div>
+
+          {/* Wallet */}
+          <div className="borderAll px-1 lg:px-2 py-[6px] inline-flex items-center gap-1">
+            <BiWallet />
+            <p className="inline-flex gap-1 text-sm">
+              Connect <span className="hidden md:block">Wallet</span>
+            </p>
+          </div>
+
+          {/* More */}
+          <div className="borderAll px-1 lg:px-2 py-[6px] inline-flex items-center gap-1">
+            <div className="borderRight pr-1">
+              <img
+                className="h-6 w-6"
+                src="https://zomi.finance/static/media/ic_eth_24.6b1d8a1d.svg"
+                alt=""
               />
-            </svg>
-          </button>
-          <button className="btn btn-ghost btn-circle">
-            <div className="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-              <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
-          </button>
+            <div className="cursor-pointer">
+              <FiMoreVertical />
+            </div>
+          </div>
         </div>
       </div>
     </div>
